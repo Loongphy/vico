@@ -1,11 +1,12 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -16,7 +17,7 @@ export default defineConfig({
     }],
   },
   plugins: [
-    vue(),
+    Vue(),
 
     // https://github.com/antfu/unplugin-vue-components
     Components({
@@ -48,5 +49,8 @@ export default defineConfig({
       extensions: ['vue'],
       exclude: ['**/components/*.vue'],
     }),
+
+    // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
+    Layouts(),
   ],
 })
