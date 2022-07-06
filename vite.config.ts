@@ -28,6 +28,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
+        'vue-router',
         'vue-i18n',
       ],
       dts: 'src/auto-imports.d.ts',
