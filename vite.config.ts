@@ -28,6 +28,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
+        'vitest',
         'vue-router',
         'vue-i18n',
       ],
@@ -54,4 +55,9 @@ export default defineConfig({
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
   ],
+  // https://github.com/vitest-dev/vitest
+  test: {
+    include: ['src/test/**/*.test.ts'],
+    environment: 'jsdom',
+  },
 })
