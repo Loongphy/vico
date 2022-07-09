@@ -6,6 +6,6 @@ body,
   padding: 0;
 }
 
-html.dark {
-  background: #121212;
+body {
+  @apply text-gray-700 dark:bg-gray-800 dark:text-gray-200;
 }
