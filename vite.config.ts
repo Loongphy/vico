@@ -31,6 +31,7 @@ export default defineConfig({
         'vitest',
         'vue-router',
         'vue-i18n',
+        '@vueuse/core',
       ],
       dts: 'src/auto-imports.d.ts',
     }),
