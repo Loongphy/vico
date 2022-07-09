@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit --skipLibCheck",
-    "test": "vitest",
+    "test:unit": "vitest",
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
