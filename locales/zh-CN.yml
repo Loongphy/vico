@@ -1,0 +1,5 @@
+button:
+  back: 返回
+  toggle_dark: 切换深色模式
+  toggle_langs: 切换语言
+not-found: 找不到页面

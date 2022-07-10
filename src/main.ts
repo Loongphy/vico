@@ -2,11 +2,19 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
 import generatedRoutes from 'virtual:generated-pages'
-import i18n from './locales'
+import messages from '@intlify/vite-plugin-vue-i18n/messages'
+import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
+
+const i18n = createI18n({
+  locale: 'zh-CN',
+  fallbackLocale: 'en-US',
+  allowComposition: true,
+  messages,
+})
 
 const routes = setupLayouts(generatedRoutes)
 const router = createRouter({
