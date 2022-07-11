@@ -6,6 +6,9 @@ body,
   padding: 0;
 }
 
-body {
-  @apply text-gray-700 dark:bg-gray-800 dark:text-gray-200;
+html.dark{
+  background: #1f2040;
+}
+#nprogress .bar {
+  background: #165dff;
 }
