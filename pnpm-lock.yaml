@@ -15,6 +15,7 @@ specifiers:
   jsdom: ^20.0.0
   lint-staged: ^13.0.3
   nprogress: ^0.2.0
+  pinia: ^2.0.15
   typescript: ^4.7.4
   unocss: ^0.42.0
   unplugin-auto-import: ^0.9.2
@@ -31,6 +32,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 8.9.1_vue@3.2.37
   nprogress: 0.2.0
+  pinia: 2.0.15_j6bzmzd4ujpabbp5objtwxyjp4
   vue: 3.2.37
   vue-i18n: 9.1.10_vue@3.2.37
   vue-router: 4.1.0_vue@3.2.37
@@ -3968,6 +3970,24 @@ packages:
     hasBin: true
     dev: true
 
+  /pinia/2.0.15_j6bzmzd4ujpabbp5objtwxyjp4:
+    resolution: {integrity: sha512-qkIvXdGWMbnc3UG3l8rn9SV4nE2H4I2R/exZcdn/0pDzjaKQmMUsBXlIurfKu62VJsjETkqss46NP/c88NnjYQ==}
+    peerDependencies:
+      '@vue/composition-api': ^1.4.0
+      typescript: '>=4.4.4'
+      vue: ^2.6.14 || ^3.2.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@vue/devtools-api': 6.2.0
+      typescript: 4.7.4
+      vue: 3.2.37
+      vue-demi: 0.13.2_vue@3.2.37
+    dev: false
+
   /pkg-types/0.3.3:
     resolution: {integrity: sha512-6AJcCMnjUQPQv/Wk960w0TOmjhdjbeaQJoSKWRQv9N3rgkessCu6J0Ydsog/nw1MbpnxHuPzYbfOn2KmlZO1FA==}
     dependencies:
@@ -4639,7 +4659,6 @@ packages:
     resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /ufo/0.8.4:
     resolution: {integrity: sha512-/+BmBDe8GvlB2nIflWasLLAInjYG0bC9HRnfEpNi4sw77J2AJNnEVnTDReVrehoh825+Q/evF3THXTAweyam2g==}
