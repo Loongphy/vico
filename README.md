@@ -23,7 +23,6 @@ pnpm run dev
 ```
 
 # ToDo
+- [x] progress bar
 - [ ] backend routing generator
 - [ ] axios api encapsulation
-- [ ] progress bar
-
